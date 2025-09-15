@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hotel Vannah - Rooms & Suites</title>
+
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="vendors/magnefic-popup/magnific-popup.css">
+  <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ================ Header ================= -->
+  <header class="header_area">
+    <div class="header-top">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Hotel Vannah" title="Hotel Vannah" /></a>
+          </div>
+          <div class="ml-auto d-none d-md-block d-md-flex">
+            <div class="media header-top-info">
+              <span class="header-top-info__icon"><i class="fas fa-phone-volume"></i></span>
+              <div class="media-body">
+                <p>Call Us</p>
+                <p><a href="tel:+254712345678">+254 712 345 678</a></p>
+              </div>
+            </div>
+            <div class="media header-top-info">
+              <span class="header-top-info__icon"><i class="ti-email"></i></span>
+              <div class="media-body">
+                <p>Email Us</p>
+                <p><a href="mailto:info@hotelvannah.com">info@hotelvannah.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item active"><a class="nav-link" href="rooms.html">Rooms</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Blog</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <ul class="social-icons ml-auto">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- ================ End Header ================= -->
+
+  <!-- ================ Banner ================= -->
+  <section class="contact-banner-area" id="rooms">
+    <div class="container h-100">
+      <div class="contact-banner">
+        <div class="text-center">
+          <h1>Rooms & Suites</h1>
+          <nav aria-label="breadcrumb" class="banner-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Rooms</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ End Banner ================= -->
+
+  <!-- ================ Booking Form ================= -->
+  <form class="form-search form-search-position accomodation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 gutters-19">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Search rooms..." required>
+          </div>
+        </div>
+        <div class="col-lg-6 gutters-19">
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-group">
+                <input type="date" class="form-control" placeholder="Arrival" required>
+              </div>
+            </div>
+            <div class="col-sm gutters-19">
+              <div class="form-group">
+                <input type="date" class="form-control" placeholder="Departure" required>
+              </div>
+            </div>
+            <div class="col-sm gutters-19">
+              <div class="form-group">
+                <select class="form-control">
+                  <option selected disabled>Guests</option>
+                  <option>1 Adult</option>
+                  <option>2 Adults</option>
+                  <option>Family (3+)</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm gutters-19">
+              <div class="form-group">
+                <button class="button button-form" type="submit">Check Availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- ================ End Booking Form ================= -->
+
+  <!-- ================ Rooms Section ================= -->
+  <section class="section-margin section-margin--small">
+    <div class="container">
+      <div class="section-intro text-center pb-80px">
+        <div class="section-intro__style">
+          <img src="img/home/bed-icon.png" alt="">
+        </div>
+        <h2>Our Rooms & Suites</h2>
+        <p>Discover comfort, elegance, and modern hospitality at Hotel Vannah.</p>
+      </div>
+
+      <div class="row">
+        <!-- Standard Room -->
+        <div class="col-md-6 col-xl-4 mb-5">
+          <div class="card card-explore">
+            <div class="card-explore__img">
+              <img class="card-img" src="img/rooms/standard.jpg" alt="Standard Room">
+            </div>
+            <div class="card-body">
+              <h3 class="card-explore__price">KSh 4,500 <sub>/ Night</sub></h3>
+              <h4 class="card-explore__title"><a href="#">Standard Room</a></h4>
+              <p>Perfect for solo travelers or couples, with cozy interiors and modern amenities.</p>
+              <a class="card-explore__link" href="contact.html">Book Now <i class="ti-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deluxe Room -->
+        <div class="col-md-6 col-xl-4 mb-5">
+          <div class="card card-explore">
+            <div class="card-explore__img">
+              <img class="card-img" src="img/rooms/deluxe.jpg" alt="Deluxe Room">
+            </div>
+            <div class="card-body">
+              <h3 class="card-explore__price">KSh 6,000 <sub>/ Night</sub></h3>
+              <h4 class="card-explore__title"><a href="#">Deluxe Room</a></h4>
+              <p>Spacious and stylish with added comfort, designed for both work and relaxation.</p>
+              <a class="card-explore__link" href="contact.html">Book Now <i class="ti-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Family Suite -->
+        <div class="col-md-6 col-xl-4 mb-5">
+          <div class="card card-explore">
+            <div class="card-explore__img">
+              <img class="card-img" src="img/rooms/family.jpg" alt="Family Suite">
+            </div>
+            <div class="card-body">
+              <h3 class="card-explore__price">KSh 7,500 <sub>/ Night</sub></h3>
+              <h4 class="card-explore__title"><a href="#">Family Suite</a></h4>
+              <p>Ideal for families, offering multiple beds and spacious living for everyone.</p>
+              <a class="card-explore__link" href="contact.html">Book Now <i class="ti-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Room -->
+        <div class="col-md-6 col-xl-4 mb-5">
+          <div class="card card-explore">
+            <div class="card-explore__img">
+              <img class="card-img" src="img/rooms/executive.jpg" alt="Executive Room">
+            </div>
+            <div class="card-body">
+              <h3 class="card-explore__price">KSh 8,500 <sub>/ Night</sub></h3>
+              <h4 class="card-explore__title"><a href="#">Executive Room</a></h4>
+              <p>Premium comfort with executive amenities for business and leisure travelers.</p>
+              <a class="card-explore__link" href="contact.html">Book Now <i class="ti-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Presidential Suite -->
+        <div class="col-md-6 col-xl-4 mb-5">
+          <div class="card card-explore">
+            <div class="card-explore__img">
+              <img class="card-img" src="img/rooms/presidential.jpg" alt="Presidential Suite">
+            </div>
+            <div class="card-body">
+              <h3 class="card-explore__price">KSh 12,000 <sub>/ Night</sub></h3>
+              <h4 class="card-explore__title"><a href="#">Presidential Suite</a></h4>
+              <p>Luxury at its finest, offering unmatched elegance, space, and personalized service.</p>
+              <a class="card-explore__link" href="contact.html">Book Now <i class="ti-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ================ End Rooms Section ================= -->
+
+  <!-- ================ Footer ================= -->
+  <footer class="footer-area section-gap">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-md-8 mb-4 mb-xl-0 single-footer-widget">
+          <h4>About Hotel Vannah</h4>
+          <p>Your trusted destination for comfort, elegance, and luxury in Kenya.</p>
+        </div>
+        <div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rooms.html">Our Rooms</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Booking Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-md-8 mb-4 mb-xl-0 single-footer-widget">
+          <h4>Newsletter</h4>
+          <p>Subscribe for exclusive offers and updates.</p>
+          <div class="form-wrap" id="mc_embed_signup">
+            <form target="_blank" action="#" method="get" class="form-inline">
+              <input class="form-control" name="EMAIL" placeholder="Your Email Address" required type="email">
+              <button class="click-btn btn btn-default text-uppercase">Subscribe</button>
+              <div class="info"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom row align-items-center text-center text-lg-left">
+        <p class="footer-text m-0 col-lg-8 col-md-12">
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Hotel Vannah Ltd.
+          All rights reserved.
+        </p>
+        <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ================ End Footer ================= -->
+
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendors/magnefic-popup/jquery.magnific-popup.min.js"></script>
+  <script src="vendors/easing.min.js"></script>
+  <script src="vendors/superfish.min.js"></script>
+  <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+  <script src="vendors/jquery.ajaxchimp.min.js"></script>
+  <script src="vendors/mail-script.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
