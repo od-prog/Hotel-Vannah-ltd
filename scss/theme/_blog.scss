@@ -1,0 +1,243 @@
+// ==============================================
+// Hotel Vannah - Blog Styles
+// ==============================================
+
+.blog-banner {
+  position: relative;
+
+  h4, h1, a {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 37px;
+    margin-bottom: 5px;
+
+    @media(min-width: 992px) {
+      font-size: 48px;
+    }
+  }
+
+  &-area {
+    height: 380px;
+    background: url('../../assets/images/hotel-vannah-banner.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    @media(min-width: 600px) { height: 500px; }
+    @media(min-width: 1000px) { height: 625px; }
+
+    .blog-banner {
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(rgba(11, 26, 42, 0.85), rgba(11, 26, 42, 0.85));
+      z-index: -1;
+    }
+  }
+
+  &-btn {
+    border: 2px solid #d4af37;
+    padding: 10px 45px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #d4af37;
+      color: #0b1a2a;
+    }
+  }
+}
+
+// ==============================================
+// Blog Posts / Latest Blogs
+// ==============================================
+
+.latest_blog_area {
+  background: #f9f9ff;
+  padding: 60px 0;
+}
+
+.single-recent-blog-post {
+  margin-bottom: 30px;
+
+  .thumb {
+    overflow: hidden;
+    border-radius: 8px;
+    img {
+      transition: all 0.7s linear;
+    }
+  }
+
+  .details {
+    padding-top: 30px;
+
+    .sec_h4 {
+      line-height: 24px;
+      padding: 10px 0 13px;
+      font-family: "Playfair Display", serif;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #d4af37;
+      }
+    }
+  }
+
+  .date {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+  }
+
+  &:hover img {
+    transform: scale(1.2) rotate(3deg);
+  }
+}
+
+// ==============================================
+// Blog Sidebar
+// ==============================================
+
+.blog_right_sidebar {
+  border: 1px solid #eee;
+  background: #fafaff;
+  padding: 30px;
+
+  .widget_title {
+    font-size: 18px;
+    background: #0b1a2a;
+    text-align: center;
+    color: #fff;
+    padding: 8px 0;
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+  }
+
+  .search_widget .form-control {
+    border-radius: 25px;
+    background: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+
+    &:focus {
+      border: 1px solid #d4af37;
+      box-shadow: none;
+    }
+  }
+
+  .bbtns {
+    background: #d4af37;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #b38a2d;
+    }
+  }
+
+  .tag_cloud_widget a {
+    display: inline-block;
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 5px 13px;
+    margin: 0 5px 8px 0;
+    font-size: 12px;
+    border-radius: 20px;
+    color: #0b1a2a;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #d4af37;
+      color: #fff;
+    }
+  }
+}
+
+// ==============================================
+// Blog Single Post
+// ==============================================
+
+.single-post-area {
+  .blog_details {
+    padding-top: 26px;
+
+    h2 {
+      font-size: 28px;
+      font-family: "Playfair Display", serif;
+      color: #0b1a2a;
+      margin-bottom: 20px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #d4af37;
+      }
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+  }
+
+  .quotes {
+    margin: 30px 0;
+    padding: 20px;
+    background: #fff;
+    border-left: 5px solid #d4af37;
+    font-style: italic;
+    color: #555;
+  }
+
+  .comments-area {
+    background: #fafaff;
+    border: 1px solid #eee;
+    padding: 40px 30px;
+    margin-top: 50px;
+
+    h4 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 20px;
+      font-family: "Playfair Display", serif;
+      color: #0b1a2a;
+    }
+
+    .btn-reply {
+      background: #fff;
+      border: 1px solid #d4af37;
+      color: #0b1a2a;
+      padding: 5px 18px;
+      font-size: 12px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #d4af37;
+        color: #fff;
+      }
+    }
+  }
+}

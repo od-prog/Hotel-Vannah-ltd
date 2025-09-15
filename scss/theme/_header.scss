@@ -1,0 +1,227 @@
+// ==============================================
+// Hotel Vannah - Header Styles
+// ==============================================
+
+.header_area {
+  position: absolute;
+  width: 100%;
+  z-index: 999999;
+  background: #fff;
+  transition: background 0.4s, all 0.3s linear;
+
+  .navbar {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+
+    @media (max-width: 992px) {
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+      background: #fff;
+    }
+
+    .nav {
+      .nav-item {
+        margin-right: 40px;
+
+        .nav-link {
+          font-family: "Playfair Display", serif;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 14px;
+          color: #0b1a2a; // deep navy
+          padding: 22px 4px;
+          display: inline-block;
+          transition: all 0.3s ease;
+
+          @media (max-width: 991px) {
+            color: #0b1a2a;
+            padding: 12px 4px;
+          }
+
+          &:hover {
+            color: #d4af37; // gold hover
+          }
+        }
+
+        &.active .nav-link {
+          color: #d4af37;
+        }
+
+        &.submenu {
+          position: relative;
+
+          ul {
+            background: #fff;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+            @media (min-width: 992px) {
+              position: absolute;
+              top: 120%;
+              left: 0;
+              min-width: 200px;
+              text-align: left;
+              opacity: 0;
+              visibility: hidden;
+              transition: all 300ms ease-in;
+            }
+
+            .nav-item {
+              border-bottom: 1px solid #eee;
+
+              .nav-link {
+                line-height: 45px;
+                padding: 0 25px;
+                color: #0b1a2a;
+                font-size: 13px;
+                transition: all 0.2s ease;
+              }
+
+              &:hover .nav-link {
+                color: #d4af37;
+              }
+
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+
+          &:hover ul {
+            @media (min-width: 992px) {
+              opacity: 1;
+              visibility: visible;
+              top: 100%;
+            }
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &.navbar_fixed {
+    .main_menu {
+      background: #fff;
+      position: fixed;
+      width: 100%;
+      top: -70px;
+      left: 0;
+      right: 0;
+      transform: translateY(70px);
+      transition: all 0.3s ease;
+      box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
+
+      .navbar .nav .nav-item .nav-link {
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// ==================== Header Top ==================== //
+.header-top {
+  padding: 20px 0;
+  border-bottom: 1px solid #f0f0f0;
+
+  @media (min-width: 767px) {
+    padding: 25px 0;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      margin-bottom: 12px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__icon {
+      margin-right: 12px;
+
+      i,
+      span {
+        font-size: 20px;
+        color: #d4af37; // gold icons
+      }
+    }
+
+    .media-body {
+      p {
+        margin-bottom: 0;
+        font-size: 13px;
+        color: #777;
+      }
+
+      a {
+        color: #0b1a2a;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+          color: #d4af37;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @media (min-width: 600px) {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+// ==================== Mobile Nav ==================== //
+@media (max-width: 991px) {
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+
+    span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: #d4af37;
+      margin-bottom: 4px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .header_area .navbar-collapse {
+    max-height: 340px;
+    overflow-y: auto;
+    background: #fff;
+  }
+
+  .header_area .navbar .nav .nav-item .nav-link {
+    display: block;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}

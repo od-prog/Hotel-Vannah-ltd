@@ -1,0 +1,54 @@
+// ==============================================
+// Hotel Vannah - Accommodations Styles
+// ==============================================
+
+.accomodation {
+  
+  &.form-search-position {
+    bottom: 75px; // Ensures search form floats nicely above accommodations
+  }
+
+  // Extra styling for Hotel Vannah branding
+  &__card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0px 6px 16px rgba(0,0,0,0.1);
+      transform: translateY(-4px);
+    }
+  }
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b1a2a;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #b38a4c; // Hotel Vannah gold
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    background: #b38a4c;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #8c6937;
+      color: #fff;
+    }
+  }
+}
