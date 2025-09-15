@@ -1,0 +1,180 @@
+
+/* =============================================================
+   Hotel Vannah Ltd - Custom Branded Stylesheet
+   Fonts: Playfair Display (headings), Open Sans (body)
+   Colors: Emerald Green #2e5339, Gold #d4af37, White #ffffff,
+           Dark Navy #0b1a2a (footer/nav background)
+   ============================================================= */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #2e5339;
+}
+
+a {
+  color: #2e5339;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover, a:focus {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+/* Header & Navbar */
+.header_area {
+  background: #0b1a2a;
+  padding: 10px 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+  color: #d4af37;
+}
+
+/* Banner */
+.home-banner-area {
+  background: url('../img/home/banner.jpg') center center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.home-banner h1 {
+  font-size: 52px;
+  color: #ffffff;
+}
+
+.home-banner h4 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #d4af37;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #2e5339;
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #d4af37;
+  color: #0b1a2a;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.button-form {
+  width: 100%;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card-explore__title a {
+  color: #2e5339;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card-explore__price {
+  color: #d4af37;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Forms */
+.form-control {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #2e5339;
+  box-shadow: 0 0 0 0.2rem rgba(46,83,57,0.25);
+}
+
+/* Footer */
+.footer-area {
+  background: #0b1a2a;
+  color: #ffffff;
+  padding: 60px 0 30px 0;
+}
+
+.footer-area h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #d4af37;
+}
+
+.footer-area ul li a {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.footer-area ul li a:hover {
+  color: #d4af37;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #d4af37;
+}
+
+/* Utilities */
+.section-intro__style img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.section-intro h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2e5339;
+}
+
+.bg-porcelain {
+  background: #f8f8f8;
+}
